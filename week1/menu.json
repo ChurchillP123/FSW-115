@@ -1,0 +1,22 @@
+{
+    "appetizers": [
+        {"name": "fries", "ingredients": ["potatoes", "salt", "pepper"], "description": "hot, salty fries to make you thirsty."},
+        {"name": "onion rings", "ingredients": ["onions", "salt", "pepper"], "description": "hot, onion rings to make you thirsty."}
+    ],
+    "cold sandwiches": [
+        {"name": "turkey", "ingredients": ["turkey slices", "bread", "chips"], "description": "the best turkey sandwich you will eat."},
+        {"name": "ham", "ingredients": ["ham", "bread", "chips"], "description": "the best ham sandwich you will eat."}
+    ], 
+    "hot sandwiches": [
+        {"name": "chicken", "ingredients": ["chicken", "bread", "chips"], "description": "a hot chicken sandwich toasted to your delight."},
+        {"name": "roast beef", "ingredients": ["beef", "bread", "chips"], "description": "a hot roast beef sandwich toasted to your delight."}
+    ], 
+    "desserts": [
+        {"name": "cake", "ingredients": ["bread", "icing", "chocolate"], "description": "a big fluffy cake dripping with chocolate."},
+        {"name": "coffee", "ingredients": ["coffee", "cream", "sugar"], "description": "a hot cup of coffee with cream and sugar."}
+    ], 
+    "drinks": [
+        {"name": "water", "ingredients": ["water", "ice", "lemon"], "description": "a refreshing glass of water served with a lemon."},
+        {"name": "soda", "ingredients": ["water", "fizz", "flavoring", "sugar"], "description": "any fountain drink of your choice served chilled."}
+    ]
+}
