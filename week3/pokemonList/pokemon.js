@@ -24,12 +24,8 @@ function postToDOM(data) {
     for (let i = 0; i < data.length; i++) {
         let name = document.createElement('h1');
         name.textContent = data[i].name;
-        document.body.appendChild(name);
-        getData(data[i].url, getHeight);
+        let url = document.createElement('h2');
+        url.textContent = data[i].url;
+        document.body.append(name, url);
     }
-}
-
-function getHeight(data) {
-    //I'm not sure how to access the heights and tag them back to the postToDOM function
-    console.log(data);
 }
