@@ -1,0 +1,53 @@
+/* Common Breakpoints
+Mobile: 360 x 720
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+High-res laptop or desktop: 1920 x 1080 */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 350px;
+    height: auto;
+}
+
+
+
+button {
+    font-size: 1rem;
+    height: fit-content;
+    align-self: flex-start;
+}
+
+li {
+    font-size: 1.5rem;
+    transition: transform .7s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.5);
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    button {
+        align-self: center;
+    }
+    img {
+        width: 45%;
+        height: 30%;
+    }
+}
