@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axios ToDo</title>
+    <link rel="stylesheet" href="./axios.css">
+</head>
+<body>
+    <div class="listContainer">
+        <ol id="oList"></ol>
+    </div>
+    <div class="container">
+        <form name="requestForm">
+            <h1>Axios ToDo List</h1>
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" class="form-control" required><br>
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" class="form-control" required><br>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label><br>
+                <textarea name="description" id="description" class="form-control" cols="50" rows="4" required></textarea><br>
+            </div>
+            <button id="makeRequest">POST</button>
+        </form>
+    </div>
+    
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js" integrity="sha512-Idr7xVNnMWCsgBQscTSCivBNWWH30oo/tzYORviOCrLKmBaRxRflm2miNhTFJNVmXvCtzgms5nlJF4az2hiGnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./axios.js"></script>
+</body>
+</html>
