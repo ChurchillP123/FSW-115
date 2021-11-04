@@ -1,8 +1,14 @@
-axios.get('http://api.bryanuniversity.edu/churchill_perry/list')
+function getData() {
+    axios.get('http://api.bryanuniversity.edu/churchill_perry/list')
     .then(response => createToDo(response.data))
     .catch(error => console.log(error))
+}
+
+getData();
+
 
 function createToDo(data) {
+    clearData();
     for (let i = data.length - 1; i >= 0; i--) {
         let item = document.createElement('li');
         item.textContent = data[i].description;
@@ -31,9 +37,16 @@ function createToDo(data) {
         deleteButton.addEventListener('click', (e) => {
             let toDelete = e.target.parentNode;
             axios.delete(`http://api.bryanuniversity.edu/churchill_perry/list/${toDelete.id}`)
-                .then(res => console.log(res))
+                .then(res => getData())
                 .catch(err => console.log(err))
         });
+    }
+}
+
+function clearData() {
+    const el = document.getElementById('oList');
+    while (el.firstChild) {
+        el.removeChild(el.firstChild);
     }
 }
 
@@ -46,8 +59,13 @@ todoForm.addEventListener('submit', e => {
         description: todoForm.description.value,
         isComplete: false
     }
+
+    todoForm.title.value = "";
+    todoForm.price.value = "";
+    todoForm.description.value = "";
+
     axios.post('http://api.bryanuniversity.edu/churchill_perry/list', newTodo)
-        .then(res => console.log(res))
+        .then(res => getData())
         .catch(err => console.log(err))
 });
 
