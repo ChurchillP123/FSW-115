@@ -1,0 +1,35 @@
+body {
+    margin: 20px;
+    box-sizing: border-box;
+    background-color: lightgreen;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 50px;
+}
+
+.grid div {
+    background-color: black;
+    color: white;
+    font-size: 1.6em;
+    list-style-type: none;
+    border: 2px solid black;
+    text-align: center;
+    margin: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+ol li {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+ol ul {
+    color: red;
+}
+
